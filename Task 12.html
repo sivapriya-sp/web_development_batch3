@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flexbox</title>
+    <style>
+        .flex-container {
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: row wrap;
+            text-align: center;
+            -webkit-flex-flow: row wrap;
+        }
+        .flex-container > *{
+            padding: 15px;
+            -webkit-flex:1 100%;
+            flex: 1 100%;
+        }
+        .article{
+            text-align: left;
+        }
+        header{
+            background: hsl(0, 52%, 29%);
+            color: white;
+        }
+        footer{
+            background: hsl(0, 52%, 29%);
+            color: white; 
+        }
+        .nav{
+            background: #eee;
+        }
+        .nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        .nav ul a{
+            text-decoration: none;
+        }
+        @media all and (min-width: 768px){
+            .nav{
+                text-align: left;
+                -webkit-flex:1 auto;
+                flex: 1 auto;
+                -webkit-order:1;
+                order: 1;
+             }
+             .article{
+                -webkit-flex:5 0px;
+                flex: 5 auto;
+                -webkit-order:2;
+                order: 2;
+             }
+             .footer{
+                -webkit-order:3;
+                order: 3;
+             }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <header>
+            <h1>css flexbox</h1>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li>><a href="#">Home</a></li>
+                <li>><a href="#">Service</a></li>
+                <li>><a href="#">About us</a></li>
+            </ul>
+        </nav>
+        <article class="article">
+            <h1>flexbox</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas vitae ipsam alias libero pariatur dolorum veniam impedit eaque.
+                Quibusdam aperiam ipsa dolorem inventore ad doloremque quo totam
+                corporis excepturi! Adipisci.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta aperiam dolores,
+                aliquam accusantium deserunt reiciendis, omnis maiores saepe accusamus,
+                velit animi! Similique asperiores doloremque numquam repellat non.
+                Reprehenderit, architecto quae?</p>
+            <p><strong>this page content in css flexbox example</strong></p>
+        </article>
+        <footer>Copyright @ rendercity</footer>
+    </div>
+</body>
+
+</html>
