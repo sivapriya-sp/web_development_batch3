@@ -1,0 +1,68 @@
+<!-- rgb - (255,99,71)
+Hex - hex decimal code - #ffffff white // #000000 black  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        .btn-base{
+            width: 150px;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn-dark{
+            background: #3630a3;
+            color: white;
+            border: none;
+        }
+        .btn-light{
+            background: #808cf8;
+            color: white;
+            border: none;
+        }
+        .btn-outline{
+            background:none;
+            color: rgb(29, 23, 145);
+            border: 1px solid red;
+        }
+        .btn-style{
+            color: #3630a3;
+            border: 2px soild #3630a3;
+            width: 150px;
+            padding: 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn-style:hover{
+            background: #3630a3;
+            color: white;
+        }
+        .my-sytle{
+            padding: 20px;
+            color: red;
+            background-color: antiquewhite;
+        }
+        .my-clor{
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="my-sytle">
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+   Enim quasi laboriosam asperiores modi delectus eligendi debitis laudantium fugiat, atque rem. Tenetur alias molestiae inventore ratione suscipit,
+    hic accusamus perferendis voluptatem?
+    </div>
+   <button class="btn-base btn-dark" onclick="alert('Hi Guys')"> Button 1 </button> 
+   <button class="btn-base btn-light" onclick="alert('Hi Everyone')"> Button 2</button> 
+   <button class="btn-base btn-outline" onclick="alert('Hi Welcome')"> Button 3 </button> 
+   <button class="btn-style" > Button 4 </button>
+   <p class="my-clor" style="background-color: rgb(18, 195, 201);">Color</p> 
+
+</body>
+</html>
